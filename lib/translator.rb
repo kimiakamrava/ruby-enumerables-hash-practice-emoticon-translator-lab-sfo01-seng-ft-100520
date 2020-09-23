@@ -4,8 +4,8 @@ require 'yaml'
 require 'pry'
 
 #def load_library
- # emoticon_file = YAML.load_file('lib/emoticons.yml')
-  #emoticon =  '(>゜))))彡)'
+ emoticon_file = YAML.load_file('lib/emoticons.yml')
+
   
 def load_library(emoticon_file)
   emoticons = YAML.load_file('lib/emoticons.yaml')
