@@ -8,9 +8,9 @@ require 'pry'
   
 def load_library(emoticon_file)
   emoticons = YAML.load_file(emoticon_file)
-  emoticon_lib = {
+  emoticon_lib = 
   emoticons.each do |meaning, value|
-    
+    emoticon_lib[meaning]={'english'=>"" , 'japanese'=> ""}
     english = value[0]
     japanese = value[1]
     binding.pry
