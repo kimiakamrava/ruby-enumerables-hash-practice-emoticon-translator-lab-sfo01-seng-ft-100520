@@ -16,7 +16,7 @@ def load_library(emoticon_file)
     #binding.pry
     emoticon_lib[meaning][:japanese] = value[1]
     emoticon_lib[meaning][:english] = value[0]
-    
+    #binding.pry
   end
 emoticon_lib  
 end
