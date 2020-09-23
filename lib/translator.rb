@@ -10,12 +10,12 @@ def load_library(emoticon_file)
   emoticons = YAML.load_file(emoticon_file)
   emoticon_lib ={} 
   emoticons.each do |meaning, value|
-    emoticon_lib[meaning]={':english'=>"" , ':japanese'=> ""}
+    emoticon_lib[meaning]={:english=>"" , :japanese=> ""}
     english = value[0]
     japanese = value[1]
     #binding.pry
-    emoticon_lib[meaning][':japanese'] = value[1]
-    emoticon_lib[meaning][':english'] = value[0]
+    emoticon_lib[meaning][:japanese] = value[1]
+    emoticon_lib[meaning][:english] = value[0]
     #binding.pry
   end
 emoticon_lib  
