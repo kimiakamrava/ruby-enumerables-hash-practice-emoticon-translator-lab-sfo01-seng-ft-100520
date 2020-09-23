@@ -16,7 +16,7 @@ def load_library(emoticon_file)
     #binding.pry
     emoticon_lib[meaning][:japanese] = value[1]
     emoticon_lib[meaning][:english] = value[0]
-    #binding.pry
+    binding.pry
   end
 emoticon_lib  
 end
@@ -27,7 +27,7 @@ def get_japanese_emoticon(emoticon_file , emoticons)
   emoticon_lib =load_library(emoticon_file)
   japanese_emoticon = emoticon_lib[meaning][emoticons]
   japanese_emoticon ? japanese_emoticon : 'sorry,that emoticon was not found'
-  binding.pry
+  
 end
 
 
