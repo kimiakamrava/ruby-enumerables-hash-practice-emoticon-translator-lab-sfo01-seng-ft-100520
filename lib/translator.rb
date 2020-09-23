@@ -28,7 +28,7 @@ def get_japanese_emoticon(emoticon_lib , emoticons)
 
   :japanese_emoticon = emoticon_lib[meaning]value[1]
   :japanese_emoticon ? japanese_emoticon : 'sorry,that emoticon was not found'
-  
+  binding.pry
 end
 
 
